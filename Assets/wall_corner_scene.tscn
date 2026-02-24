@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://c7efur5xe5rs1"]
+
+[ext_resource type="PackedScene" uid="uid://bt85lvugn07ct" path="res://Assets/brackeys_3d_game_assets/dungeon_assets/building/wall_corner.glb" id="1_tyfsi"]
+[ext_resource type="Material" uid="uid://cgnd07sbl7osx" path="res://Assets/dungeon_mat.tres" id="2_lhsxs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tyfsi"]
+size = Vector3(1.0012207, 4.000046, 2.5326538)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_lhsxs"]
+size = Vector3(2.5029297, 4.009918, 1)
+
+[node name="wall_corner2" instance=ExtResource("1_tyfsi")]
+
+[node name="wall_corner" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_lhsxs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00061035156, 2.0028305, 0.75112915)
+shape = SubResource("BoxShape3D_tyfsi")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75146484, 1.9966583, 0)
+shape = SubResource("BoxShape3D_lhsxs")

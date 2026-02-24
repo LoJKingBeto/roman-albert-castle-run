@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3bavd8k71djy"]
+
+[ext_resource type="PackedScene" uid="uid://bdhnh83ym4njx" path="res://Assets/brackeys_3d_game_assets/dungeon_assets/building/wall_tsplit.glb" id="1_nlnpu"]
+[ext_resource type="Material" uid="uid://cgnd07sbl7osx" path="res://Assets/dungeon_mat.tres" id="2_1hehh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nlnpu"]
+size = Vector3(4.010132, 4.0115356, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1hehh"]
+size = Vector3(1.0043945, 4.0081024, 1.5129395)
+
+[node name="wall_tsplit" instance=ExtResource("1_nlnpu")]
+
+[node name="wall_Tsplit" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_1hehh")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0025024414, 1.9999084, 0)
+shape = SubResource("BoxShape3D_nlnpu")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0021972656, 1.9991684, 1.2508545)
+shape = SubResource("BoxShape3D_1hehh")

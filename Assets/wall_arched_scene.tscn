@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfoyjyybpu885"]
+
+[ext_resource type="PackedScene" uid="uid://c280mdepf8bwd" path="res://Assets/brackeys_3d_game_assets/dungeon_assets/building/wall_arched.glb" id="1_4t2yd"]
+[ext_resource type="Material" uid="uid://cgnd07sbl7osx" path="res://Assets/dungeon_mat.tres" id="2_ongod"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_4t2yd"]
+size = Vector3(4.015381, 4.0196533, 1)
+
+[node name="wall_arched2" instance=ExtResource("1_4t2yd")]
+
+[node name="wall_arched" parent="." index="0"]
+surface_material_override/0 = ExtResource("2_ongod")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.003540039, 1.9932251, 0)
+shape = SubResource("BoxShape3D_4t2yd")
