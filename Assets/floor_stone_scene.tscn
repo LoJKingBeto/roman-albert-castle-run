@@ -11,6 +11,8 @@ size = Vector3(4.0021973, 0.16077423, 3.9969482)
 [node name="floor_tile_large" parent="." index="0"]
 surface_material_override/0 = ExtResource("2_vhnb3")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0010986328, -0.019741058, -0.0006713867)
 shape = SubResource("BoxShape3D_oxsyg")

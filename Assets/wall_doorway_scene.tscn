@@ -20,14 +20,16 @@ surface_material_override/0 = ExtResource("2_732os")
 [node name="wall_doorway_door" parent="wall_doorway" index="0"]
 surface_material_override/0 = ExtResource("2_732os")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5020409, 1.9988413, 0)
 shape = SubResource("BoxShape3D_26sim")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4994049, 1.9967651, 0)
 shape = SubResource("BoxShape3D_732os")
 
-[node name="CollisionShape3D3" type="CollisionShape3D" parent="." index="3"]
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="StaticBody3D" index="2"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0069885254, 3.428112, 0)
 shape = SubResource("BoxShape3D_ul3mx")

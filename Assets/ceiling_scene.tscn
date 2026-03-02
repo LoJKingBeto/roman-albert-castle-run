@@ -12,6 +12,8 @@ size = Vector3(3.994629, 0.74731445, 4.0044556)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.019511938, 0.019282103, -0.0013437271)
 surface_material_override/0 = ExtResource("2_afotd")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.022705078, 0.12634277, -0.00045776367)
 shape = SubResource("BoxShape3D_7iotg")

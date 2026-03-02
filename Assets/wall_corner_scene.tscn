@@ -14,10 +14,12 @@ size = Vector3(2.5029297, 4.009918, 1)
 [node name="wall_corner" parent="." index="0"]
 surface_material_override/0 = ExtResource("2_lhsxs")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00061035156, 2.0028305, 0.75112915)
 shape = SubResource("BoxShape3D_tyfsi")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.75146484, 1.9966583, 0)
 shape = SubResource("BoxShape3D_lhsxs")

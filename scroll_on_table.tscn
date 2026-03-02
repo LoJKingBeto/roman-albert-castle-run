@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://d26uf1pv3hlsn"]
+
+[ext_resource type="PackedScene" uid="uid://dvlq7m82i0ryy" path="res://Assets/custom/Scroll on table.glb" id="1_0362j"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pwx5l"]
+size = Vector3(6, 6.6, 6)
+
+[node name="Scroll on table" instance=ExtResource("1_0362j")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="2"]
+disable_mode = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
+shape = SubResource("BoxShape3D_pwx5l")

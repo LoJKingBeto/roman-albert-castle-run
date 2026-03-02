@@ -14,10 +14,12 @@ size = Vector3(2.0041504, 2.5186615, 1.3702393)
 [node name="wall_shelves" parent="." index="0"]
 surface_material_override/0 = ExtResource("2_166of")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="1"]
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0031089783, 1.9973145, -0.005004883)
 shape = SubResource("BoxShape3D_nhaoh")
 
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="." index="2"]
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="StaticBody3D" index="1"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0018310547, 2.013008, 0.18511963)
 shape = SubResource("BoxShape3D_166of")
